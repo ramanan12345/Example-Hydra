@@ -7,15 +7,3 @@
 meteor-platform
 autopublish
 insecure
-email
-meteorhacks:npm
-less
-accounts-password
-matb33:collection-hooks
-dburles:collection-helpers
-urigo:angular@0.9.3
-urigo:ionic
-angularui:angular-ui-router
-
-
-npm-container
