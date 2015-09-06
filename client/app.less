@@ -1,9 +1,11 @@
+//Global stylesheet
+
 html,body{
 	height: 100%;
 	width: 100%;
 }
 
-.full-div{
+.full-size{
 	height: 100%;
 	width: 100%;
 }
@@ -11,19 +13,11 @@ html,body{
 /* Imports */
 
 #mobile{
-	height: 100%;
-	width: 100%;
+	@import "mobile/app/styles/ionic.import.less";
 	@import "mobile/app/styles/app.import.less";
-	@import "mobile/app/main/main.import.less";
 }
-//Ionic css can't be scoped but I'll put the web css after so it always takes precedence
-@import "mobile/app/styles/ionic.import.less";
 
 #web{
-	height: 100%;
-	width: 100%;
-	@import "web/app/styles/app.import.less";
 	@import "web/app/styles/bootstrap.import.less";
-	@import "web/app/main/main.import.less";
-	@import "web/app/directives/navbar/navbar.import.less";
+	@import "web/app/styles/app.import.less";
 }

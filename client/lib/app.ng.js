@@ -1,3 +1,11 @@
+Meteor.startup(function(){
+	if(UseMobile){
+		$('html').attr('id', 'mobile');
+	}else{
+		$('html').attr('id', 'web');
+	}
+});
+
 Template.indexBody.helpers({
 	UseMobile: function(){
 		return UseMobile;
