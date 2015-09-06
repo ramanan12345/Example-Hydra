@@ -1,16 +1,3 @@
-/*
- * Set to true to always develop in the browser. This is similar to the ionic mobile server and
- * it allows for faster mobile development without touching a simulator.
- *
- * Note: It will always be true on Cordova. Make sure to let Cordova decide in production.
- */
-
-if(Meteor.settings && Meteor.settings.public){
-	UseMobile = Meteor.isCordova || Meteor.settings.public.AlwaysMobile || false;
-}else{
-	UseMobile = Meteor.isCordova || false;
-}
-
 Template.indexBody.helpers({
 	UseMobile: function(){
 		return UseMobile;

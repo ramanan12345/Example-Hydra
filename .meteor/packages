@@ -13,8 +13,9 @@ less
 accounts-password
 matb33:collection-hooks
 dburles:collection-helpers
-urigo:angular@0.9.3
-urigo:ionic
+cleor41:usemobile
+cleor41:ionicjs
+angular
 angularui:angular-ui-router
 
 
