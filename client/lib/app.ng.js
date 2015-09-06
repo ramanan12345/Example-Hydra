@@ -33,7 +33,17 @@ if(UseMobile){
 		'angular-meteor',
 		'ui.router',
 		'ionic'
-	]);
+	]).run(function($ionicPlatform){
+		$ionicPlatform.ready(function(){
+			//Maybe use Meteor.Codova for this?
+			if(window.cordova && window.cordova.plugins.Keyboard){
+				cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+			}
+			if(window.StatusBar){
+				StatusBar.styleDefault();
+			}
+		});
+	});
 	angular.module('mobile.services',[
 		'both',
 		'angular-meteor',
